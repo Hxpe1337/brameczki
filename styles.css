@@ -1,0 +1,136 @@
+*,*::after,*::before {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+      --bg-color: #222831;
+      --secondary-color: #31363F;   
+      --font-color: #EEEEEE;
+}
+
+
+
+.main-container {
+      display: flex;
+  }
+  
+  .header {
+      width: 200px; /* lub jakakolwiek szerokość nawigacji */
+  h2 {
+      font-weight: 300;
+      height: 40px      ;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.193);
+  }
+}
+  
+  .content {
+      margin-left: 50px;
+      flex-grow: 1; /* sprawia, że treść zajmuje pozostałą przestrzeń */
+  }
+  .content-section {
+      text-align: center;
+      width: 50%;
+
+}
+  
+
+body {
+      font-family: "Poppins", sans-serif;
+      background-color: var(--bg-color);
+      color: var(--font-color);
+
+
+}
+
+a {
+      color: var(--fons-color);
+
+} 
+.nav-link i {
+      margin-right: 5px; /* Dodaje odstęp między ikoną a tekstem */
+      color: #FFFFFF; /* Zmienia kolor ikon na biały */
+  }
+  
+  /* Opcjonalnie, zmiana koloru ikon dla aktywnego linku */
+  .nav-link.active i {
+      color: #f4f4f4; /* Zielony kolor dla ikon aktywnego linku */
+  }
+  
+nav {
+      width: 200px; /* Adjust the width of the navbar */
+      height: 100vh; /* Make the navbar full height */
+      border-top-right-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.193);
+
+      background-color:var(--secondary-color); /* Background color of the navbar */
+      padding: 20px 0px; /* Padding inside the navbar */
+    }
+    
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    nav ul li {
+      margin-bottom: 10px; /* Space between items */
+    }
+    
+    nav ul li a {
+      font-weight: 500;
+      text-decoration: none;
+      padding: 0  20px; /* Padding inside the navbar */
+      margin-bottom: 5px;
+      margin-top: 10px;
+
+      color: var(--font-color); /* Link color */
+      display: block; /* Make the links fill the container */
+    }
+    .nav-link.active {
+      font-weight: bold;
+      color: #e1e1e1; /* Zielony kolor dla aktywnego linku */
+  }
+  
+
+
+  .form-group {
+      margin-left: 20px;
+      text-align: left; /* Dodaj tę linię */
+  }
+  
+  /* Reszta Twoich stylów pozostaje bez zmian */
+  label {
+      display: block;
+      margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+      width: 50%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: var(--secondary-color);
+      border: 1px solid rgba(255, 255, 255, 0.193);
+  }
+  
+  input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+      background-color: #45a049;
+  }
+  
